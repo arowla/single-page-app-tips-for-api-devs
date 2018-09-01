@@ -16,7 +16,7 @@ Note:
 
 ## Who Should Listen to this Talk
 
-### Builders of:
+Builders of:
 
 - Read/Write APIs
 - APIs which power client applications
