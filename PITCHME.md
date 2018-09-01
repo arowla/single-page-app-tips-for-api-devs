@@ -1,6 +1,6 @@
 # Single Page Apps
 
-## What Every API developer should know
+## What an API developer should know
 
 _DC API Meetup, Sept. 4 2018, Alison Rowland_
 ---
