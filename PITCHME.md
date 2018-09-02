@@ -12,7 +12,7 @@ _DC API Meetup, Sept. 4 2018, Alison Rowland_
 
 Note:
 - A message from front-end land
-- 10 yrs BE, 8 mos FE
+- 10+ yrs BE, 8 mos FE
 - wrap head around
 
 ---
@@ -42,12 +42,12 @@ Note:
 
 ## Never Trust the Client
 
----
+---?image=assets/img/obama-door.jpg&size=contain&opacity=50
 
 ## YOU OWN SECURITY
 ### IN the API
 
----
+---?image=assets/img/ben-franklin-key.jpg&size=contain&opacity=50
 
 ## User Owns Authentication
 
@@ -55,7 +55,7 @@ Note:
 - client can't hold secrets
 - user's valid username/password pair are everything
 
----
+---?image=assets/img/bridge-tower.jpg&size=contain&opacity=50
 
 ## API Owns Authorization
 
@@ -76,8 +76,9 @@ Note:
 - permissions belong to the user object
 - don't rely on the session key
 
----
+---?image=assets/img/id-mclovin.jpg&size=contain&opacity=50
 
+@snap[north-west]
 ## authorize real-time for:
 
 - elevated permissions
@@ -269,6 +270,12 @@ Note:
 
 Note:
 - a sequence diagram is worth 1,000 words
+
+---
+
+## Alison Rowland
+
+@fa[github](@arowla) @fa[twitter](@arowla)
 
 ---
 
