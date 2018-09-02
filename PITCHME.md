@@ -275,7 +275,9 @@ Note:
 
 ## Alison Rowland
 
-@fa[github](@arowla) @fa[twitter](@arowla)
+@fa[github]
+
+@fa[twitter]
 
 ---
 
