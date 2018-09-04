@@ -159,6 +159,10 @@ Note:
 
 ## A URL refers to the whole of an SPA
 
+@ul
+- https://yoursite.com/#/.......
+@ulend
+
 Note:
 - This is really difficult for many server-side devs to understand
 - Anything URL referring to something _inside_ the app, beyond the front page, is called a "deep link."
@@ -242,11 +246,14 @@ Note:
 
 ## Know what you're building
 
-Note:
+@ul
 - Which parts of your API are general-purpose?
 - Which parts are tailored to a given client experience?
 - Where do the two overlap?
 - What data do you need to protect?
+@ulend
+
+Note:
 - Figure out some guiding principles for how you want things to work, and make your team live by them, iterating as needed.
 
 ---
