@@ -277,7 +277,7 @@ Note:
 ## cross-stack
 ## feature teams
 
----
+---?image=assets/img/seq-diag.jpg&size=contain&opacity=50
 
 ## pictures and diagrams
 ### draw them. ask for them frequently.
@@ -289,7 +289,10 @@ Note:
 
 ## Alison Rowland
 
-@arowla on Github and Twitter
+@arowla
+
+These slides:
+`https://gitpitch.com/arowla/single-page-app-tips-for-api-devs/`
 
 
 
