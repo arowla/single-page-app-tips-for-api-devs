@@ -205,7 +205,7 @@ Note:
 Note:
 - Edge APIs can also represent somewhat of a 
 
----
+---?image=assets/img/bank-safe.jpg&size=contain&opacity=50
 
 ## An Edge API can hold credentials for:
 
@@ -216,7 +216,7 @@ Note:
 - still possible for a rogue client to abuse an edge beyond its intended purpose
 - but an Edge can be your only way to keep certain things secure
 
----
+---?image=assets/img/mirror.jpg&size=contain&opacity=50
 
 ## Your data model
 ## will get mirrored in the app
