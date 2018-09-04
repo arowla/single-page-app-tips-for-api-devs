@@ -277,7 +277,7 @@ Note:
 ## cross-stack
 ## feature teams
 
----?image=assets/img/seq-diag.png&size=contain&opacity=50
+---?image=assets/img/seq-diag.png&size=contain&opacity=40
 
 ## pictures and diagrams
 ### draw them. ask for them frequently.
