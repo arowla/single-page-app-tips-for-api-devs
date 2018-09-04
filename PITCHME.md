@@ -168,12 +168,12 @@ Note:
 - Anything URL referring to something _inside_ the app, beyond the front page, is called a "deep link."
 - These are possible but often tricky/annoying to implement
 
----
+---?image=assets/img/mcpherson-statue.jpg&size=contain&opacity=50
 
 ## SPAs are static
 ## + logic and ajax
 
----?image=assets/img/washdc-map.jpg&size=contain+opacity=50
+---?image=assets/img/washdc-map.jpg&size=contain&opacity=50
 
 ## All experiences must be baked-in
 
