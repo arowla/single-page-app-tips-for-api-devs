@@ -169,7 +169,7 @@ Note:
 ## SPAs are static
 ## + logic and ajax
 
----
+---?image=assets/img/washdc-map.jpg&size=contain+opacity=50
 
 ## All experiences must be baked-in
 
