@@ -103,7 +103,7 @@ Note:
 # 2/5 Persistence
 # & State
 
----
+---?image=assets/img/paris-opera-house.jpg&opacity=50&size=contain
 
 ## Your API is not a Museum
 
