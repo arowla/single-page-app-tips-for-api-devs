@@ -30,7 +30,7 @@ Note:
 
 1. Security
 2. Persistence & State
-3. Dynamicism & Complexity
+3. The Upshot of Being Static
 4. Edge APIs
 5. SPA/API Development: HOWTO
 
@@ -77,6 +77,7 @@ Note:
 - don't rely on the session key
 
 ---?image=assets/img/id-mclovin.jpg&size=contain&opacity=50
+@transition[none]
 
 @snap[north-west]
 ## authorize real-time for:
@@ -152,17 +153,8 @@ Note:
 
 ---
 
-# 3/5 Dynamicism & Complexity
+# 3/5 The Upshot of Being Static
 
----
-
-## Your data model
-## will get mirrored in the app
-
-Note:
-- modern JS frameworks are built on the idea that the app is semi-independent
-- so they need to implement a working data model themselves
-- TODO: what's the upshot of this?
 ---
 
 ## A URL refers to the whole of an SPA
@@ -224,6 +216,18 @@ Note:
 
 ---
 
+## Your data model
+## will get mirrored in the app
+
+Note:
+- modern JS frameworks are built on the idea that the client app is independent
+- so they need to implement a working data model themselves
+- Edge APIs will paper over some, but not all, of the complexity.
+- As a result, getting data out may become easy, but getting it back in will often become harder. Objects transformed for display will need to be un-transformed to be persisted.
+- talk to your FE and Edge developers -- their experience (re)building your data model and endpoints can inform a better API design
+
+---
+
 # 5/5 SPA/API Development: HOWTO
 
 ---
@@ -231,12 +235,17 @@ Note:
 ## Multiple teams at work
 ### How do you get it all done?
 
+Note:
+- _segue slide_
+
 ---
 
 ## Know what you're building
 
 Note:
-- Which parts of your API are general? Where are they tailored to a given client experience? Where do the two above overlap?
+- Which parts of your API are general-purpose?
+- Which parts are tailored to a given client experience?
+- Where do the two overlap?
 - What data do you need to protect?
 - Figure out some guiding principles for how you want things to work, and make your team live by them, iterating as needed.
 
@@ -275,15 +284,7 @@ Note:
 
 ## Alison Rowland
 
-@fa[github]
-
-@fa[twitter]
-
----
-
-## Ooh, ROCA
-
-- https://roca-style.org/index.html
+@arowla on Github and Twitter
 
 
 
