@@ -159,9 +159,7 @@ Note:
 
 ## A URL refers to the whole of an SPA
 
-@ul
-- https://yoursite.com/#/.......
-@ulend
+`https://yoursite.com/#/.......`
 
 Note:
 - This is really difficult for many server-side devs to understand
