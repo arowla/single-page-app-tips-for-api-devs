@@ -131,7 +131,7 @@ Note:
 - Think carefully about how client interactions should or should not change the core data
 - Be prepared to represent client state differently, in other models, other microservices, etc.
 
----
+---?image=assets/img/hydrant.jpg&size=contain&opacity=50
 
 ## UX drives persistence and refresh
 
