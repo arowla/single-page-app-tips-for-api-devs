@@ -254,7 +254,7 @@ Note:
 Note:
 - Figure out some guiding principles for how you want things to work, and make your team live by them, iterating as needed.
 
----?assets/img/what-is-client.jpg&size=contain&opacity=50
+---?image=assets/img/what-is-client.jpg&size=contain&opacity=50
 
 ## What Is a Client?
 
@@ -262,9 +262,9 @@ Note:
 - I've said the word "client" a bunch here. I was using it in the computing sense of a piece of software which accesses a server.
 - But I'd like to propose an alternate way to think about it........
 
----?assets/img/customer-clerk.jpg&size=contain&opacity=50
+---?image=assets/img/customer-clerk.jpg&size=contain&opacity=50
 
-## FE Team is your client
+## Front-End Team is your client
 
 Note:
 - their needs will drive much of what you build
