@@ -254,7 +254,7 @@ Note:
 Note:
 - Figure out some guiding principles for how you want things to work, and make your team live by them, iterating as needed.
 
----?assets/img/client.jpg&size=contain&opacity=50
+---?assets/img/what-is-client.jpg&size=contain&opacity=50
 
 ## What Is a Client?
 
@@ -277,7 +277,7 @@ Note:
 ## cross-stack
 ## feature teams
 
----?image=assets/img/seq-diag.jpg&size=contain&opacity=50
+---?image=assets/img/seq-diag.png&size=contain&opacity=50
 
 ## pictures and diagrams
 ### draw them. ask for them frequently.
