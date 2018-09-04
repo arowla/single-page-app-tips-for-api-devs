@@ -141,7 +141,7 @@ Note:
 - unless you're implementing websockets, updates will be based on polling or strategic refresh
 - some data can be fetched and persisted at login, others with each page load, others after certain more granular interactions
 
----
+---?image=assets/img/masons.jpg&size=contain&opacity=50
 
 ## API Versioning
 
