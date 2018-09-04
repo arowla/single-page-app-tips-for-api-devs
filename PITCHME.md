@@ -205,7 +205,7 @@ Note:
 Note:
 - Edge APIs can also represent somewhat of a 
 
----?image=assets/img/bank-safe.jpg&size=contain&opacity=50
+---?image=assets/img/bank-safe.jpg&size=contain&opacity=40
 
 ## An Edge API can hold credentials for:
 
@@ -232,7 +232,7 @@ Note:
 
 # 5/5 SPA/API Development: HOWTO
 
----
+---?image=assets/img/teams-horses.jpg&size=contain&opacity=50
 
 ## Multiple teams at work
 ### How do you get it all done?
