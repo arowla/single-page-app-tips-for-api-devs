@@ -178,7 +178,7 @@ Note:
 - it has to be there from the beginning
 - and by extension of that...
 
----
+---?image=static/img/glacier.jpg&size=contain&opacity=50
 
 ## Sensitive Data
 ## Must be Preserved in the API
