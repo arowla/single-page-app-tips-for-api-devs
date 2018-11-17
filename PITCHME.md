@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.1/css/all.css" crossorigin="anonymous">
-
-
 # Single Page Apps
 
 ## What an API developer should know
