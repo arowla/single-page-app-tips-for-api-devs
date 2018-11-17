@@ -349,6 +349,13 @@ Note:
 ## SPAs are static
 ### Plus logic and ajax
 
+---
+
+## Your API layer is exposed to the world
+
+Note:
+- Because of that logic and ajax, your API can't hide behind server-side rendering
+
 ---?image=assets/img/washdc-map.jpg&size=contain&opacity=40
 
 ## All experiences must be baked-in
@@ -372,16 +379,24 @@ Note:
 
 # 5/6 SPA Back Ends
 
+Note:
+- There are some solutions that we can turn to to make all of this a little easier
+
 ---
 
 ## Edge APIs
 
+@ul
 - expose
 - proxy
 - orchestrate
+@ulend
 
 Note:
-- Edge APIs can also represent somewhat of a 
+- We've mentioned exposing your API to the world... an Edge sits in front of your key systems and...
+- (click thru and read list)
+- Edge APIs can also represent somewhat of a challenge for your dev teams, because it's another layer of abstraction to deal with
+- almost always used for mobile apps
 
 ---?image=assets/img/bank-safe.jpg&size=contain&opacity=25
 
@@ -434,6 +449,8 @@ Note:
 - selecting stack
 - overall architecture
 - API request and schema architecture
+- authentication
+- security
 
 ---?image=assets/img/thermometer.jpg&size=contain&opacity=30
 
@@ -461,6 +478,18 @@ Note:
 - This is a contentious topic... Versioning in headers vs URLs...
 - For maximum agility and least code-debt (having to support multiple versions in both back-end and client code), consider an additive-only approach.
 - Backward-incompatible changes must be made to new endpoints. Old endpoints only removed once no-one is using them anymore.
+
+---
+
+## Security
+
+### Understanding SPA architecture is key to securing your app
+
+Note:
+- In case I didn't harp on it enough, just a reminder that we really have to understand how SPAs function
+- in order to properly secure our apps.
+- I have a suspicion that the world is full of insecure SPAs and consequently insecure APIs
+- 
 
 ---?image=assets/img/teams-horses.jpg&size=contain&opacity=50
 
@@ -505,15 +534,6 @@ draw them. ask for them frequently.
 
 Note:
 - a sequence diagram is worth 1,000 words
-
----
-
-## Do you need
-## a single page app?
-
-Note:
-- Using Angular or React is often assumed for everything front-end
-- But SPA architectures should be weighed for its pros and cons, just like everything else
 
 ---
 
