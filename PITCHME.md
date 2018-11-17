@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.1/css/all.css" crossorigin="anonymous">
 
 
 # Single Page Apps
 
 ## What an API developer should know
 
-_DC API Meetup, Sept. 4 2018, Alison Rowland_
+_PyDataDC, Nov. 17, 2018, Alison Rowland_
 ---
 
 ## Things Are Different Here
@@ -24,19 +24,77 @@ Note:
 - Read/Write APIs
 - APIs which power client applications 
 
+Note:
+- This talk is written about SPAs, but the principles may apply similarly to mobile app development
+
+---
+
+# Poll
+
+Note:
+- Everybody raise your hand.
+- Leave your hand up if:
+  - You've written an API
+  - You've written a single page app
+  - You've written an API that backs a single page app
+  - You've written an API that backs a single page app with user logins
+  - You've written an API platform that backs multiple different single page apps with user logins
+
 ---
 
 ## Agenda
 
-1. Security
-2. Persistence & State
-3. The Upshot of Being Static
-4. Edge APIs
-5. SPA/API Development: HOWTO
+1. SPA Architecture
+2. Security
+3. State
+4. The Upshot of Being Static
+5. SPA Back Ends
+6. Why?
 
 ---
 
-# 1/5 Security
+# 1/6 SPA Architecture
+
+---
+
+# SSR vs CSR
+## (Server-Side Rendering vs. Client-Side Rendering)
+
+---
+
+# TODO: add SSR/CSR diagram
+
+---
+
+# SPA Frameworks
+
+- Angular @fa[angular](Angular)
+- Vue
+- React
+- Ember
+
+Note:
+- Any I missed?
+- These are mostly similar, though Vue and React offer server-side rendering (or isomorphic JS), which muddies the water a bit
+
+---
+
+# Deployment
+
+Note:
+- It's possible to host an SPA on a completely unadorned S3 bucket
+
+---
+
+# #
+## What the Hashtag Does
+
+Note:
+- TODO: How the hashtag URL works.
+
+---
+
+# 2/6 Security
 
 ---
 
@@ -67,6 +125,10 @@ Note:
 
 ---
 
+# TODO: Picture Slide
+
+---
+
 ## Double-Check Permissions
 ### Session -> User -> Permissions
 ### ! Session -> Permissions
@@ -75,6 +137,10 @@ Note:
 - stating this another way
 - permissions belong to the user object
 - don't rely on the session key
+
+---
+
+# TODO: Picture Slide
 
 ---?image=assets/img/id-mclovin.jpg&size=contain&opacity=50
 @transition[none]
@@ -85,6 +151,7 @@ Note:
 - elevated permissions
 - destructive actions
 
+
 Note:
 - things can happen in real-time that make sessions or permissions invalid, such as a user's account entering fraud status
 - all elevated privilege or destructive actions must be authorized in real-time
@@ -94,14 +161,22 @@ Note:
 ## Client-Based Permissions
 ### Possible (sort-of) but Tricky
 
+---
+
+# TODO: Diagram of Different Clients
+## Consumer Client A
+## Consumer Client B (different vertical)
+## Administrative Client
+
 Note:
 - A given user can authorize a client on their account
 - But a malicious user can abuse those privileges
+- How do you differentiate the users?
+- What if the users are based on identity?
 
 ---
 
-# 2/5 Persistence
-# & State
+# 3/6 State
 
 ---?image=assets/img/paris-opera-house.jpg&opacity=50&size=contain
 
@@ -124,6 +199,16 @@ Note:
 
 ---
 
+## Poll
+
+Note:
+- Quick poll: raise your hand if you develop APIs
+- Raise your hand if you develop read-only APIs
+- "Don't change jobs-- it's nice work if you can get it"
+- Raise your hand if you develop read/write APIs
+
+---
+
 ## Client State
 
 Note:
@@ -141,6 +226,18 @@ Note:
 - unless you're implementing websockets, updates will be based on polling or strategic refresh
 - some data can be fetched and persisted at login, others with each page load, others after certain more granular interactions
 
+---
+
+## Your data model
+## will get mirrored in the app
+
+Note:
+- modern JS frameworks are built on the idea that the client app is independent
+- so they need to implement a working data model themselves
+- Edge APIs will paper over some, but not all, of the complexity.
+- As a result, getting data out may become easy, but getting it back in will often become harder. Objects transformed for display will need to be un-transformed to be persisted.
+- talk to your FE and Edge developers -- their experience (re)building your data model and endpoints can inform a better API design
+
 ---?image=assets/img/masons.jpg&size=contain&opacity=50
 
 ## API Versioning
@@ -153,7 +250,7 @@ Note:
 
 ---
 
-# 3/5 The Upshot of Being Static
+# 4/6 The Upshot of Being Static
 
 ---
 
@@ -192,7 +289,7 @@ Note:
 - This hearkens back to the security portion of this talk-- separating business logic, and all possible permutations of that, as well as sensitive data, requires a different way of thinking than you may be used to.
 ---
 
-# 4/5 Edge APIs
+# 5/6 SPA Back Ends
 
 ---
 
@@ -218,19 +315,11 @@ Note:
 
 ---?image=assets/img/mirror.jpg&size=contain&opacity=50
 
-## Your data model
-## will get mirrored in the app
+
+# 6/6 Why?
 
 Note:
-- modern JS frameworks are built on the idea that the client app is independent
-- so they need to implement a working data model themselves
-- Edge APIs will paper over some, but not all, of the complexity.
-- As a result, getting data out may become easy, but getting it back in will often become harder. Objects transformed for display will need to be un-transformed to be persisted.
-- talk to your FE and Edge developers -- their experience (re)building your data model and endpoints can inform a better API design
-
----
-
-# 5/5 SPA/API Development: HOWTO
+- Why should I bother to understand all this?
 
 ---?image=assets/img/teams-horses.jpg&size=contain&opacity=50
 
