@@ -232,6 +232,17 @@ Note:
 
 ---
 
+> If tokens aren’t enough, why do so many public APIs only provide token-based authentication? Probably because the primary use case for these APIs isn’t to be consumed directly by a JS client in a web browser. [..] Are you sure your apps are so secure?
+
+_-- François Zaninotto, "Your API-Centric Web App Is Probably Not Safe Against XSS and CSRF", Nov 2015_
+
+http://www.redotheweb.com/2015/11/09/api-security.html
+
+Note:
+- I found this quote from a really great article on SPAs and why they need cross-site scripting protections.
+
+---
+
 # 3/6 State
 
 ---?image=assets/img/paris-opera-house.jpg&opacity=50&size=contain
@@ -534,6 +545,26 @@ draw them. ask for them frequently.
 
 Note:
 - a sequence diagram is worth 1,000 words
+
+---
+
+## Conclusion
+
+### Hey, API developers!
+
+Understand SPAs for:
+
+@ul
+- better architecture decisions
+- better security
+- better state management
+- better engineering process management
+@ulend
+
+Note:
+- Hey, API developers!
+- Yes, this talk is still about you. This is about US.
+- (read list)
 
 ---
 
